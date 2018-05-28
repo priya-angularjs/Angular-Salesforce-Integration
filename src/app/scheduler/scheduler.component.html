@@ -1,0 +1,68 @@
+<div class="col-md-3 col-sm-12 col-lg-2">
+
+  <mat-card class="card-length">
+    <button mat-raised-button color="primary" class="btn-class" (click)="getEvents()"><h4>Refresh Data</h4></button>
+    <mat-toolbar class="event-title">Event Location</mat-toolbar>
+    <div class="dropdown-length">
+      <p-multiSelect [options]="aliasNameArray" [panelStyle]="{minWidth:'12em'}" [(ngModel)]="selectedNames"
+                     (onChange)="selected($event)" defaultLabel="All Locations">
+      </p-multiSelect>
+    </div>
+  </mat-card>
+
+</div>
+<div class="col-md-9 col-sm-12 col-lg-10">
+  <mat-card class="calendar-margin">
+    <p-schedule [events]="calendarData" [header]="header" [eventLimit]="4" [droppable]="false" [editable]="false"
+                (onViewRender)="onViewRender($event)" (onEventClick)="onEventClick($event)"
+                [eventRender]="eventRender" [height]="720" [options]="options" timezone="local"
+                [slotEventOverlap]="false">
+    </p-schedule>
+
+  </mat-card>
+</div>
+<p-dialog header="Update Event" [(visible)]="display" modal="modal" [responsive]="true" appendTo="body">
+  <form [formGroup]="updateEventForm" class="form-horizontal">
+    <div class="form-group">
+      <label class="control-label col-sm-5">Representative</label>
+      <div class="col-sm-7">
+        <input type="text" pInputText formControlName="assignedTo" readonly class="text-none"/>
+      </div>
+    </div>
+    <div class="form-group">
+
+      <label class="control-label col-sm-5">Event <span class="text-danger"
+                                                        *ngIf="!updateEventForm.controls['title'].valid">*</span>
+      </label>
+      <div class="col-sm-7">
+        <input type="text" pInputText formControlName="title" maxlength="150"/>
+
+      </div>
+
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-5">Start Date & Time
+        <span class="text-danger" *ngIf="!updateEventForm.controls['startDate'].valid">*</span></label>
+      <div class="col-sm-7">
+        <p-calendar formControlName="startDate" [showTime]="true" hourFormat="12" [showSeconds]="true" appendTo="body"
+                    (onSelect)="selectStartDate($event)" readonlyInput="true"></p-calendar>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-5">End Date & Time
+        <span class="text-danger" *ngIf="!updateEventForm.controls['endDate'].valid">*</span></label>
+      <div class="col-sm-7">
+        <p-calendar formControlName="endDate" [showTime]="true" hourFormat="12" [showSeconds]="true" [minDate]="minDate"
+                    [maxDate]="maxDate" appendTo="body" (onSelect)="selectEndDate($event)"
+                    readonlyInput="true"></p-calendar>
+
+      </div>
+    </div>
+  </form>
+  <p-footer>
+    <button mat-raised-button class="btn-color" (click)="updateEvents(updateEventForm)"
+            [disabled]="!updateEventForm.valid" [ngClass]="{'disabledBtn': !updateEventForm.valid === true}">Update
+    </button>
+    <button mat-raised-button class="btn-warn" (click)="cancel()">Cancel</button>
+  </p-footer>
+</p-dialog>

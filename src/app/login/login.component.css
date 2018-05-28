@@ -1,0 +1,10 @@
+.wrapper {
+  text-align: center;
+  margin-top: 18%;
+}
+
+.login {
+  background: linear-gradient(to bottom, #40a2b4 51%, #ebedf0 100%);
+  /*position: absolute;*/
+   top: 50%;
+}

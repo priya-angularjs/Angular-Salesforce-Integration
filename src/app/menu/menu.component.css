@@ -1,0 +1,108 @@
+.calendar-is-mobile .calendar-sidenav-container {
+  flex: 1 0 auto;
+}
+.sideNavWidth{
+  width: 200px;
+}
+.mat-toolbar.mat-primary{
+  background: linear-gradient(to bottom, #40a2b4 51%, #ebedf0 100%);
+  color: #fff;
+}
+.sidenav-content{
+  margin-left: 230px;
+  margin-right: 0px;
+}
+.toggleBtn {
+  padding: 0;
+  min-width: 0;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  line-height: 40px;
+  border-radius: 50%;
+  margin: 20px;
+}
+.menuBtn {
+  padding: 0;
+  min-width: 0;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  line-height: 40px;
+  border-radius: 50%;
+  margin: 60px;
+}
+
+
+@media (max-width: 600px) {
+  .module {
+    font-size: 10px;
+    max-height: 75px; }
+}
+@media (max-width: 1024px) {
+  .grid {
+    margin: 0;
+  }
+  .module {
+    min-width: 60px;
+  }
+}
+.all-wrap {
+  min-height: 100vh;
+}
+.page-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.content {
+  flex: 1;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+main > *:not(router-outlet) {
+  flex: 1;
+  display: block;
+}
+.iconBtn {
+  padding: 0;
+  min-width: 0;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  line-height: 40px;
+  border-radius: 50%;
+  margin-left: 1600px;
+}
+.icon-color{
+  color: #298495;
+}
+.contentWidth{
+  margin-left: 200px;
+  margin-right: 0px;
+  margin-bottom: 100px;
+}
+.mat-drawer {
+  background-color: #fafafa;
+  color: rgba(0, 0, 0, 0.87);
+}
+.loginBtn{
+  margin-left: 1%;
+}
+.cloudBtn{
+  background-color: #ffe4c400;
+}
+.titleBtn{
+  background-color: #29849500;
+  border-radius: 40px;
+  margin-left: 15px;
+  pointer-events: none;
+}
+.toolbar-design{
+  background: linear-gradient(to bottom, #40a2b4 51%, #ebedf0 100%);
+  color: rgba(0, 0, 0, 0.87);
+  padding: 12px;
+}
+

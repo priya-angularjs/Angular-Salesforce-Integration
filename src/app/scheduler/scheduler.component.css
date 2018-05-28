@@ -1,0 +1,169 @@
+.calendar-design{
+  margin: 0px 32px 32px 32px;
+  background: #fafafa00;
+}
+.add-button{
+  margin-bottom: -40px;
+  margin-left: 1400px;
+}
+.box-body {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  padding: 10px;
+}.fc-color-picker {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+ }
+.btn-group, .btn-group-vertical {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+.event-title{
+  height: 40px;
+  margin-top: 15px;
+}
+.ui-grid li {
+  list-style-type: none;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.btn {
+  display: inline-block;
+  padding: 16px 20px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.event-width {
+  width: 300px;
+}
+.location-width {
+  margin-top: 25px;
+  width: 300px;
+}
+.dropdown-length{
+  margin: 25px;
+}
+.card-length{
+  margin-top: 45px;
+}
+.ui-dropdown .ui-dropdown-trigger {
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  cursor: pointer;
+  width: 16px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0px 15px !important;
+}
+.mat-fab {
+  box-sizing: border-box;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  outline: 0;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  vertical-align: baseline;
+  text-align: center;
+  margin-bottom: -13px;
+  min-width: 88px;
+  line-height: 36px;
+  padding: 0 16px;
+  border-radius: 2px;
+  transform: translate3d(0,0,0);
+  transition: background .4s cubic-bezier(.25,.8,.25,1),box-shadow 280ms cubic-bezier(.4,0,.2,1);
+  min-width: 0;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  flex-shrink: 0;
+}
+.refreshBtn{
+  float: right;
+  margin: -15px;
+  background: linear-gradient(to bottom, #40a2b4 51%, #ebedf0 100%);
+}
+.calendar-margin{
+  margin-top: 45px;
+  margin-bottom: 10px;
+}
+.btn-color{
+  background: linear-gradient(to bottom, #40a2b4 51%, #ffffff 100%);
+  color: white;
+}
+.btn-warn{
+  background: linear-gradient(to bottom, #ef3518c4 51%, #ffffff 100%);
+  color: white;
+}
+.form-design{
+  padding: 20px;
+}
+.inputbox-align{
+  margin:20px;
+}
+.text-none{
+  border: none;
+  font-size: 1.6rem;
+  color: #40a2b4;
+  font-weight: 800;
+  pointer-events: none;
+}
+.text-danger{
+  color: red;
+}
+.disabledBtn{
+  cursor: no-drop;
+}
+.resetBtn{
+  background: linear-gradient(to bottom, #40a2b4 51%, #ebedf0 100%);
+  border-radius: 40px;
+  margin-left: 15px;
+}
+.margin-Btn{
+  padding-left: 15%;
+  padding-right: 20%;
+}
+.resetBtn-length{
+  padding: 15px;
+}
+.btn-class{
+  background: linear-gradient(to bottom, #40a2b4 51%, #ebedf0 100%);
+  display: flex;
+  box-sizing: border-box;
+  padding: 0px 16px;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+  border-radius: 35px;
+  justify-content: center;
+}
